@@ -10,6 +10,8 @@ in_file = open(from_file)
 in_data = in_file.read()
 # we could do these two on one line too:
 # in_file = open(from_file); in_data = in_file.read()
+# or
+# in_data = open(from_file).read()  # then one should omit in_file.close() at the end of this script
 
 print("The input file is {data_length} bytes long.".format(data_length=len(in_data)))
 
